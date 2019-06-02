@@ -1,0 +1,32 @@
+{
+  "name": "new-app",
+  "version": "1.0.0",
+  "description": "\"new app\"",
+  "main": "sarver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "build": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/areejobaid94/new-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/areejobaid94/new-app/issues"
+  },
+  "homepage": "https://github.com/areejobaid94/new-app#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "bluebird": "^3.5.5",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.1",
+    "save": "^2.4.0",
+    "sequelize": "^5.8.7"
+  }
+}

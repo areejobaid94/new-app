@@ -1,0 +1,52 @@
+<!-- 
+		<div>
+		
+					<h1>Welcome , please sign up</h1>
+								<input type="text"  placeholder="fullName" ng-model ="fullName" >
+								<input type="password"  placeholder="Password" ng-model ="password" >
+								<input type="text"  placeholder="user Name" ng-model ="userName" >
+								<input type="number"  placeholder="Phone Number" ng-model ="phoneNumber" >
+						<button type="submit"  ng-click="Regester()" >Create Account</button>
+        </div>
+
+
+ -->
+
+
+		<body>
+				<div id="sing up">
+					<div class="container">
+						<div id="login-row" class="row justify-content-center align-items-center">
+							<div id="login-column" class="col-md-6">
+								<div id="login-box" class="col-md-12">
+									<form id="login-form" class="form" action="" method="post">
+										<h3 class="text-center text-info">Sing Up</h3>
+										<div class="form-group">
+											<label for="username" class="text-info">User Name:</label><br>
+											<input  type="text"  placeholder="Enter your user Name" class="form-control"  ng-model="userName" ng-required="true"/>
+										</div>
+										<div class="form-group">
+												<label for="fullname" class="text-info">full Name:</label><br>
+												<input  type="text"  placeholder="Enter your full Name"  class="form-control"  ng-model="fullName" ng-required="true"/>
+											</div>
+										<div class="form-group">
+											<label for="password" class="text-info">Password:</label><br>
+											<input type="password" name="password"  class="form-control" placeholder="Enter your password"  ng-model="password"  ng-required="true">
+										</div>
+										<div class="form-group">
+												<label for="phoneNumber" class="text-info">phone Number:</label><br>
+												<input type="text" name="password"  class="form-control" placeholder="Enter your phone Number"  ng-model="phoneNumber"  ng-required="true">
+											</div>
+										<div class="form-group">
+											<label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+											<button type="submit"  class="btn btn-info btn-md" ng-click= "Regester()" >Create Account</button>
+										</div>
+										<div id="register-link" class="text-right">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</body>
