@@ -228,7 +228,6 @@ app.get('/profile', function(req, res) {
 });
 
 
-
 app.delete('/', function (req, res) {
   res.send('DELETE request to homepage')
 })
