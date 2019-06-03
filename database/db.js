@@ -13,7 +13,7 @@ const db = new Sequelize('banat_al_3ala', 'root', '', {
 	dialect: 'mysql'
 });
 
-db.sync({ force:  false, logging: false }).then(() => {
+db.sync({ force:  true, logging: true }).then(() => {
 	console.log(`Database & tables created!`);
 });
 
