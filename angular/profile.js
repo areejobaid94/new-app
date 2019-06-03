@@ -2,13 +2,13 @@ angular.module('app')
 .controller("profile",function($scope,$http,$location,$rootScope){
  console.log("profile") ;
  $scope.massege
- $scope.user = $rootScope.user
+ $scope.user1 = $rootScope.user
  $scope.update =function(){
     $http({
         method:'put',
         url:'/profile',
         data:JSON.stringify({
-            id : $scope.user.id,
+            id : $scope.user1.id,
             userName:$scope.userName,
             password:$scope.password,
             phoneNumber:$scope.phoneNumber,
@@ -24,11 +24,12 @@ angular.module('app')
     })
 }
 $scope.goTo =function(){
+
     $rootScope.user = {
-        userName:$scope.userName || $scope.user.userName,
-        phoneNumber:$scope.phoneNumber || $scope.user.phoneNumber,
-        fullName:$scope.fullName || $scope.user.fullName,
-        id : $scope.user.id
+        userName:$scope.userName || $scope.user1.userName,
+        phoneNumber:$scope.phoneNumber || $scope.user1.phoneNumber,
+        fullName:$scope.fullName || $scope.user1.fullName,
+        id : $scope.user1.id
     }
 
     $location.path('/chate'); 

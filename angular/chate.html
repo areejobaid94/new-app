@@ -1,12 +1,12 @@
 <div>
-        <h1>chat</h1>
+        <h1 class= "mah">   chat</h1>
 
-        <input  type="text"  placeholder="write your massege"  ng-model="massege"  />
-        <button type="submit"  ng-click="chate()" >run</button>
+        <input  type="text"  placeholder="write your massege"  ng-model="massege"  class= "main"/>
+        <button type="submit"  ng-click="chate()"  class= "mabot" >run</button>
         <div ng-hide="show === false"  ng-repeat = "info in infos | orderBy:'createdAt':true"  class="well" style="width: 50%; margin-left: 25%; font-size: 17px">
-               <p>  {{info.user}}</p>
+               <p class="chat" >  {{info.user}}</p>
             <p> {{info.chates}} </p>
-                <button class=" btn-primary"  ng-click = "delete(info.id)" class="btn btn-primary">delete</button>   
+                <button class=" btn-primary" ng-hide= "show === true"  ng-click = "delete(info.id)" class="btn btn-primary">delete</button>   
               </div>
               
 </div>

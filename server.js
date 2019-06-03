@@ -215,8 +215,7 @@ app.post('/chate', function(req, res) {
 app.get('/profile', function(req, res) {
     const userName = req.body.userName;
     console.log(userName)
-    chate
-    .findAll({ where: { user: userName} })
+    chate.findAll({ where: { user: userName} })
     .then(function(chate) {
         return res.send({
             chate
@@ -228,8 +227,16 @@ app.get('/profile', function(req, res) {
 });
 
 
-app.delete('/', function (req, res) {
-  res.send('DELETE request to homepage')
+
+app.delete('/chate', (req, res) => {
+chate.destroy({ where:{ id : req.body.id}})
+.then(function(){ 
+    res.send("ok")
+     })
+.catch(function(err) {
+    return res.status(500).send(err);
 })
+})
+
 
 app.listen(port, () => console.log('The Server is working on ' + port));
