@@ -2,7 +2,9 @@ angular.module( "app")
 .controller("chate",function($scope,$http,$location,$rootScope){
     $scope.user = $rootScope.user
     $scope.infos
+    $scope.chatBox = true
     $scope.chate=function(){
+        $scope.chatBox = true
 		$http({
 			method:'post',
 			url:'/chate',
@@ -33,5 +35,11 @@ $scope.delete = function(chateId){
         console.log(error)
     })
 }
+
+$scope.remove = function(){
+
+
+}
+
 
   })

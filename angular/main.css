@@ -51,7 +51,7 @@ body {
 
 
 .title{
-	color:#007bff;
+	color:#4682B4;
 }
 
 .mgTp{
@@ -63,16 +63,16 @@ body {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: #007bff !important;
+	color: #4682B4 !important;
 	opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-	color: #007bff !important;
+	color: #4682B4 !important;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-	color: #007bff !important;
+	color: #4682B4 !important;
 }
 .chat{
 	margin-top:300px;
